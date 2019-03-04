@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">YouTubeUpdater</string>
+    <string name="app_name">YouTube Updater</string>
     <string name="hello_world">Hello world!</string>
-
+	<string name="internet_disconnect">Internet Disconnect</string>
+	<string name="new_feature">New Feature</string>
+	<string name="check_update_dialog_title">Update Found</string>
+	<string name="check_update_dialog_message">A new version %1$s has found. Are you sure to update now?</string>
+	<string name="check_update_progress_message">Checking update, please wait...</string>
+	<string name="latest_version_toast">%1$s is latest version</string>
+	<string name="update_notification_title">%1$s can be updated</string>
+	<string name="update_notification_text">%1$s can be updated to %2$s. Tap here to update now!</string>
+	<string name="youtube_vanced">YouTube Vanced</string>
+	<string name="microg">microG</string>
+	<string name="version">Version: %1$s</string>
+	<string name="check_update">Check update</string>
+	<string name="check_all_updates">Check all updates</string>
+	<string name="all_all_are_latest_version">All apps are the latest version</string>
+	<string name="not_installed">Not installed</string>
+	<string name="uninstall_app_first">Note: If the installer showed Not install when you install the update version, please uninstall the old one and download update again.</string>
 </resources>

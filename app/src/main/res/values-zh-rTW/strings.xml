@@ -1,0 +1,16 @@
+<resources>
+	<string name="internet_disconnect">未連接網路</string>
+	<string name="check_update_progress_message">檢查更新中，請稍後...</string>
+	<string name="new_feature">新功能</string>
+	<string name="check_update_dialog_title">更新版已釋出</string>
+	<string name="check_update_dialog_message">新版本 %1$s 可供更新。要現在更新嗎?</string>
+	<string name="latest_version_toast">%1$s 已經是最新版本</string>
+	<string name="update_notification_title">%1$s 可以更新啦！</string>
+	<string name="update_notification_text">%1$s 可以更新至 %2$s 版本。輕觸以立即更新。</string>
+	<string name="version">版本: %1$s</string>
+	<string name="check_update">檢查更新</string>
+	<string name="check_all_updates">檢查所有更新</string>
+	<string name="all_all_are_latest_version">所有應用程式都已經是最新版本啦</string>
+	<string name="not_installed">未安裝</string>
+	<string name="uninstall_app_first">溫馨提醒：如果更新時顯示未安裝應用程式，請先解除安裝舊版本再下載更新即可成功安裝囉！</string>
+</resources>

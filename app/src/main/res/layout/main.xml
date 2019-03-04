@@ -1,11 +1,186 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center">
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
 
-    <TextView
-        android:text="@string/hello_world"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+	<!-- YouTube Vanced -->
+	<ImageView
+		android:id="@+id/mainImgYoutube"
+		android:layout_width="64dp"
+		android:layout_height="64dp"
+		android:src="@drawable/youtube"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintBottom_toTopOf="@+id/mainTxtYoutube"
+		app:layout_constraintVertical_chainStyle="packed"/>
 
-</LinearLayout>
+	<TextView
+		android:id="@+id/mainTxtYoutube"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/youtube_vanced"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		app:layout_constraintTop_toBottomOf="@id/mainImgYoutube"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintBottom_toTopOf="@+id/mainTxtYoutubeVersion"
+		app:layout_constraintVertical_chainStyle="packed"/>
+
+	<TextView
+		android:id="@+id/mainTxtYoutubeVersion"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:layout_constraintTop_toBottomOf="@id/mainTxtYoutube"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintBottom_toTopOf="@+id/mainBtnYoutube"
+		app:layout_constraintVertical_chainStyle="packed"/>
+
+	<Button
+		android:id="@+id/mainBtnYoutube"
+		android:layout_width="wrap_content"
+		style="?android:attr/buttonBarButtonStyle"
+		android:layout_height="wrap_content"
+		android:text="@string/check_update"
+		app:layout_constraintTop_toBottomOf="@id/mainTxtYoutubeVersion"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintBottom_toTopOf="@+id/mainImgMicrog"
+		app:layout_constraintVertical_chainStyle="packed"/>
+
+	<ProgressBar
+		android:id="@+id/mainPrgYoutube"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:layout_constraintTop_toTopOf="@id/mainBtnYoutube"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintBottom_toBottomOf="@id/mainBtnYoutube"
+		android:visibility="invisible"/>
+
+	<!-- microG -->
+	<ImageView
+		android:id="@+id/mainImgMicrog"
+		android:layout_width="64dp"
+		android:layout_height="64dp"
+		android:src="@drawable/microg"
+		android:layout_marginTop="24dp"
+		app:layout_constraintTop_toBottomOf="@+id/mainBtnYoutube"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toLeftOf="@+id/mainImgUpdater"
+		app:layout_constraintBottom_toTopOf="@+id/mainTxtMicrog"
+		app:layout_constraintVertical_chainStyle="packed"/>
+
+	<TextView
+		android:id="@+id/mainTxtMicrog"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/microg"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		app:layout_constraintTop_toBottomOf="@id/mainImgMicrog"
+		app:layout_constraintLeft_toLeftOf="@id/mainImgMicrog"
+		app:layout_constraintRight_toRightOf="@id/mainImgMicrog"
+		app:layout_constraintBottom_toTopOf="@+id/mainTxtMicrogVersion"
+		app:layout_constraintVertical_chainStyle="packed"/>
+
+	<TextView
+		android:id="@+id/mainTxtMicrogVersion"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:layout_constraintTop_toBottomOf="@id/mainTxtMicrog"
+		app:layout_constraintLeft_toLeftOf="@id/mainImgMicrog"
+		app:layout_constraintRight_toRightOf="@id/mainImgMicrog"
+		app:layout_constraintBottom_toTopOf="@+id/mainBtnMicrog"
+		app:layout_constraintVertical_chainStyle="packed"/>
+
+	<Button
+		android:id="@+id/mainBtnMicrog"
+		android:layout_width="wrap_content"
+		style="?android:attr/buttonBarButtonStyle"
+		android:layout_height="wrap_content"
+		android:text="@string/check_update"
+		app:layout_constraintTop_toBottomOf="@id/mainTxtMicrogVersion"
+		app:layout_constraintLeft_toLeftOf="@id/mainImgMicrog"
+		app:layout_constraintRight_toRightOf="@id/mainImgMicrog"
+		app:layout_constraintBottom_toTopOf="@+id/mainBtnCheckAll"
+		app:layout_constraintVertical_chainStyle="packed"/>
+
+	<ProgressBar
+		android:id="@+id/mainPrgMicrog"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:layout_constraintTop_toTopOf="@id/mainBtnMicrog"
+		app:layout_constraintLeft_toLeftOf="@id/mainImgMicrog"
+		app:layout_constraintRight_toRightOf="@id/mainImgMicrog"
+		app:layout_constraintBottom_toBottomOf="@id/mainBtnMicrog"
+		android:visibility="invisible"/>
+
+	<!-- YouTube Updater -->
+	<ImageView
+		android:id="@+id/mainImgUpdater"
+		android:layout_width="64dp"
+		android:layout_height="64dp"
+		android:src="@mipmap/ic_launcher"
+		app:layout_constraintTop_toTopOf="@id/mainImgMicrog"
+		app:layout_constraintLeft_toRightOf="@id/mainImgMicrog"
+		app:layout_constraintRight_toRightOf="parent"/>
+
+	<TextView
+		android:id="@+id/mainTxtUpdater"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/app_name"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		app:layout_constraintTop_toTopOf="@id/mainTxtMicrog"
+		app:layout_constraintLeft_toLeftOf="@id/mainImgUpdater"
+		app:layout_constraintRight_toRightOf="@id/mainImgUpdater"/>
+
+	<TextView
+		android:id="@+id/mainTxtUpdaterVersion"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:layout_constraintTop_toTopOf="@id/mainTxtMicrogVersion"
+		app:layout_constraintLeft_toLeftOf="@id/mainImgUpdater"
+		app:layout_constraintRight_toRightOf="@id/mainImgUpdater"/>
+
+	<Button
+		android:id="@+id/mainBtnUpdater"
+		android:layout_width="wrap_content"
+		style="?android:attr/buttonBarButtonStyle"
+		android:layout_height="wrap_content"
+		android:text="@string/check_update"
+		app:layout_constraintTop_toTopOf="@id/mainBtnMicrog"
+		app:layout_constraintLeft_toLeftOf="@id/mainImgUpdater"
+		app:layout_constraintRight_toRightOf="@id/mainImgUpdater"/>
+
+	<ProgressBar
+		android:id="@+id/mainPrgUpdater"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:layout_constraintTop_toTopOf="@id/mainBtnUpdater"
+		app:layout_constraintLeft_toLeftOf="@id/mainImgUpdater"
+		app:layout_constraintRight_toRightOf="@id/mainImgUpdater"
+		app:layout_constraintBottom_toBottomOf="@id/mainBtnUpdater"
+		android:visibility="invisible"/>
+
+	<Button
+		android:id="@+id/mainBtnCheckAll"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:text="@string/check_all_updates"
+		android:layout_marginTop="24dp"
+		android:layout_marginLeft="16dp"
+		android:layout_marginRight="16dp"
+		style="@style/Widget.AppCompat.Button.Colored"
+		app:layout_constraintTop_toBottomOf="@id/mainBtnMicrog"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintVertical_chainStyle="packed"/>
+
+</android.support.constraint.ConstraintLayout>
+
